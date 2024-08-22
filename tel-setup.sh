@@ -125,6 +125,7 @@ logf "complete"
 log "app will restart in 3 seconds!"
 sleep 10
 sed -i 's/3.10/3.11/' ~/.tel/.tel_tmux.conf
+sed -i 's/exa/eza/' ~/.aliases
 tel-restart
 error 'Restart cannot be performed when app is not active on screen!'
 log "press RETURN to retry"

@@ -124,6 +124,7 @@ theme --alpha 99 > /dev/null 2>&1
 logf "complete"
 log "app will restart in five seconds!"
 sleep 10
+# fix in tmux and aliases 
 sed -i 's/3.10/3.11/' ~/.tel/.tel_tmux.conf
 sed -i 's/exa/eza/' ~/.aliases
 tel-restart

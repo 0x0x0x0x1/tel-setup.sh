@@ -123,7 +123,8 @@ fi
 theme --alpha 99 > /dev/null 2>&1
 logf "complete"
 log "app will restart in 3 seconds!"
-sleep 3
+sleep 10
+sed -i 's/3.10/3.11/' ~/.tel/.tel_tmux.conf
 tel-restart
 error 'Restart cannot be performed when app is not active on screen!'
 log "press RETURN to retry"
